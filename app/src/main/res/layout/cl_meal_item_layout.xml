@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_6sdp"
+    android:layout_marginVertical="@dimen/_6sdp"
+    app:cardCornerRadius="@dimen/_12sdp">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mealImageView"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:padding="@dimen/_6sdp"
+            android:id="@+id/mealTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold_font"
+            android:singleLine="true"
+            android:text="Infinix INBOOK"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:paddingStart="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:id="@+id/mealDetailTextView"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:fontFamily="@font/regular_font"
+            android:text="Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

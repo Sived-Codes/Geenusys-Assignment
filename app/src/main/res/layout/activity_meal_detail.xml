@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MealDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_12sdp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/semibold_font"
+            android:text="Back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/pd"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/inc_food_loader" />
+
+    <ScrollView
+        android:id="@+id/mainlayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionBar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/dishImageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/dishNameTextView"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="Baingan Bharta"
+                        android:fontFamily="@font/semibold_font"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/tagsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:fontFamily="@font/light_font"
+                        android:text="Spicy, Bun, Calorific"
+                        android:textSize="@dimen/_12sdp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/categoryAreaTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="Vegetarian, Indian"
+                    android:fontFamily="@font/regular_font"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/gray"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_height="0.4dp"/>
+
+
+                <TextView
+                    android:id="@+id/instructionsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="16dp"
+                    android:fontFamily="@font/regular_font"
+                    android:textColor="@color/black"
+                    android:text="Rinse the baingan (eggplant or aubergine) in water. Pat dry with a kitchen napkin. Apply some oil..."
+                    android:textSize="@dimen/_12sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/gray"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_height="0.4dp"/>
+
+                <TextView
+                    android:id="@+id/ingredientsTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="Ingredients:"
+                    android:fontFamily="@font/semibold_font"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/ingredientsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:fontFamily="@font/regular_font"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="1 large Aubergine\n½ cup Onion\n1 cup Tomatoes\n6 cloves Garlic\n1 Green Chili\n¼ teaspoon Red Chili Powder\n1.5 tablespoon Oil\n1 tablespoon chopped Coriander Leaves\nas required Salt" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/gray"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_height="0.4dp"/>
+
+
+                <TextView
+                    android:id="@+id/sourceLinkTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:linksClickable="true"
+                    android:fontFamily="@font/semibold_font"
+                    android:textColorLink="@color/blue"
+                    android:text="http://www.vegrecipesofindia.com/baingan-bharta-recipe-punjabi-baingan-bharta-recipe/"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:id="@+id/youtubeLinkTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:linksClickable="true"
+                    android:autoLink="web"
+                    android:fontFamily="@font/semibold_font"
+                    android:textColorLink="@color/blue"
+                    android:text="https://www.youtube.com/watch?v=-84Zz2EP4h4"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
